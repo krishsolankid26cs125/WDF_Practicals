@@ -1,0 +1,323 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ---------- 2. SKIP TO CONTENT ---------- */
+
+a[href="#main-content"] {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+}
+
+a[href="#main-content"]:focus {
+    left: 10px;
+    z-index: 1000;
+    background-color: #222;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+/* ---------- 3. HEADER ---------- */
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 32px;
+}
+
+
+/* ---------- 4. NAVIGATION ---------- */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #315b88;
+    text-decoration: underline;
+}
+
+
+/* ---------- 5. MAIN CONTENT ---------- */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* ---------- 6. SECTIONS & ASIDE ---------- */
+
+section,
+aside {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- 7. HEADINGS ---------- */
+
+h2 {
+    color: #1e3a5f;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+
+/* ---------- 8. ARTICLES ---------- */
+
+article {
+    border: 1px solid #ddd;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- 9. NORMAL LINKS ---------- */
+
+main a {
+    color: #1e3a5f;
+    font-weight: bold;
+}
+
+main a:hover,
+main a:focus {
+    color: #0b6e99;
+}
+
+
+/* ---------- 10. LISTS ---------- */
+
+main ul {
+    padding-left: 25px;
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+
+/* ---------- 11. FORMS ---------- */
+
+form {
+    max-width: 650px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+/* ---------- 12. INPUT FIELDS ---------- */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ---------- 13. INPUT FOCUS ---------- */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #1e3a5f;
+    border-color: #1e3a5f;
+}
+
+
+/* ---------- 14. BUTTONS ---------- */
+
+button {
+    background-color: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin-right: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #162d4a;
+}
+
+
+/* ---------- 15. FOOTER ---------- */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0 0 10px 0;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+    text-decoration: underline;
+}
+
+
+/* ---------- 16. STRONG TEXT ---------- */
+
+strong {
+    color: #333;
+}
+
+
+/* ---------- 17. TABLET / MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section,
+    aside {
+        padding: 20px;
+    }
+}
+
+
+/* ---------- 18. SMALL MOBILE ---------- */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section,
+    aside {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+}
